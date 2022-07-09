@@ -2,6 +2,7 @@ body {
   
   background-color: #111112e2;
   
+  
 
 }
 
@@ -9,14 +10,13 @@ body {
 * {
   box-sizing: border-box;
   min-width: fit-content;
+  
+  
+  
 
 }
 
-h2 {
 
-  font-family: c
-
-}
 
 
 
@@ -27,6 +27,7 @@ ul {
   margin-right: 50ch;
   display: contents;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
   
 }
@@ -39,11 +40,19 @@ ul li {
   background: rgba(235, 1, 1, 0.41);
   font-size: 18px;
   transition: 0.2s;
+  margin-right: 7%;
+  margin-left: 9%;
+  margin-top: 1%;
+ 
+  
+ 
+  
+  
  
 
 
 
-  /* make the list items unselectable */
+  /* make the list items unelectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -114,6 +123,7 @@ ul li.checked::before {
   content: "";
   display: table;
   clear: both;
+  
 }
 
 /* Style the input */
@@ -123,8 +133,10 @@ input {
   border-radius: 0;
   width: 75%;
   padding: 10px;
-  float: left;
+  float: center;
   font-size: 16px;
+  width: 15%;
+  
 }
 
 /* Style the "Add" button */
@@ -133,12 +145,10 @@ input {
   width: 25%;
   background: #fafafa9a;
   color: rgb(0, 0, 0);
-  float: left;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 30cm
+  float:right
+  
+  border /* border-radius */
+  
 }
 
 .addBtn:hover {
@@ -146,7 +156,7 @@ input {
 }
 
 
-/* Desing word */
+/* Design word */
 
 
 .ml11 {
@@ -180,4 +190,9 @@ input {
 .ml11 .letter {
   display: inline-block;
   line-height: 1em;
+}
+
+
+canvas {
+  margin-block-start: 0em;
 }
