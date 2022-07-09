@@ -1,7 +1,7 @@
 body {
  
-  background-color: #3437869a;
-  background: url(/background.png);
+  background-color: #111112e2;
+  
 
 }
 
@@ -91,8 +91,11 @@ ul li.checked::before {
 .header {
   background-color: #fa067cce;
   padding: 30px 40px;
+
+  
   color: white;
   text-align: center;
+  
   
 }
 
