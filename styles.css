@@ -32,7 +32,7 @@ ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: rgb(235, 1, 1);
+  background: rgba(235, 1, 1, 0.41);
   font-size: 18px;
   transition: 0.2s;
 
@@ -45,7 +45,7 @@ ul li {
 
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
-  background: rgb(235, 1, 1);
+  background: rgba(235, 1, 1, 0.438);
 }
 
 /* Darker background-color on hover */
@@ -83,7 +83,7 @@ ul li.checked::before {
 }
 
 .close:hover {
-  background-color: #f443368d;
+  background-color: #f443365c;
   color: white;
 }
 
