@@ -8,12 +8,15 @@ body {
 /* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
-  
+  min-width: fit-content;
 
 }
 
+h2 {
 
+  font-family: c
 
+}
 
 
 
@@ -25,6 +28,7 @@ ul {
   display: contents;
   text-align: center;
   
+  
 }
 
 /* Style the list items */
@@ -35,6 +39,9 @@ ul li {
   background: rgba(235, 1, 1, 0.41);
   font-size: 18px;
   transition: 0.2s;
+ 
+
+
 
   /* make the list items unselectable */
   -webkit-user-select: none;
@@ -51,6 +58,7 @@ ul li:nth-child(odd) {
 /* Darker background-color on hover */
 ul li:hover {
   background: rgb(41, 186, 1);
+  
 }
 
 /* When clicked on, add a background color and strike out text */
@@ -135,4 +143,41 @@ input {
 
 .addBtn:hover {
   background-color: rgba(53, 58, 140, 0.508);
+}
+
+
+/* Desing word */
+
+
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
