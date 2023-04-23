@@ -1,3 +1,5 @@
+
+
 body {
   
   background-color: #000000;
@@ -7,15 +9,29 @@ background-position:  17px 0, 17px 0, 0 0, 0 0;
 background-size: 34px 34px;
 background-repeat: repeat;
   
-
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+#textholder {
+  max-width: 100%;
+  text-align: center;
+}
+
+
+
 
 /* Include the padding and border in an element's total width and height */
 * {
   box-sizing: border-box;
   min-width: fit-content;
   
-  
+  backdrop-filter: blur(3px);
+
   
 
 }
@@ -141,31 +157,39 @@ ul li.checked::before {
 
 /* Style the input */
 input {
-  margin: 0;
-  border: none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-width: px;
+  
+  
+  border: solid rgb(255, 255, 255);
   border-radius: 10%;
   width: 75%;
   padding: 10px;
   float: center;
   font-size: 16px;
   width: 15%;
+  backdrop-filter: blur(100px);
   
 }
 
 /* Style the "Add" button */
 .addBtn {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   padding: 10px;
-  width: 25%;
-  background: #fafafa9a;
-  color: rgb(0, 0, 0);
-  float:right
+  justify-content: space-evenly;
+  width: 5%;
+  background: #fafafa00;
+  color: rgb(255, 255, 255);
+  float:right;
+  border-radius: 100%
+
   
   border /* border-radius */
   
 }
 
 .addBtn:hover {
-  background-color: rgba(53, 58, 140, 0.508);
+  background-color: rgba(61, 227, 6, 0.771);
 }
 
 
