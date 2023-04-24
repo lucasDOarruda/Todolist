@@ -18,8 +18,11 @@ background-repeat: repeat;
 }
 
 #textholder {
+  display: flex;
   max-width: 100%;
   text-align: center;
+  margin-left: 6%;
+
 }
 
 
@@ -31,7 +34,7 @@ background-repeat: repeat;
   min-width: fit-content;
   
   backdrop-filter: blur(3px);
-
+  
   
 
 }
@@ -41,8 +44,9 @@ background-repeat: repeat;
 li {
   display: flex;
   flex-wrap: wrap;
+
   padding: 5px;
-  justify-content: center; /* center align horizontally */
+  justify-content: space-evenly; /* center align horizontally */
   align-items: center; /* center align vertically */
   text-align: center; /* align text center */
   font-size: small; /* set smaller font size */
@@ -51,6 +55,7 @@ li {
 
 /* Remove margins and padding from the list */
 ul {
+  
   margin: 50;
   padding-left: 50ch;
   margin-right: 50ch;
@@ -66,13 +71,16 @@ ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: rgba(235, 1, 1, 0.933);
+
   font-size: 18px;
   transition: 0.2s;
   margin-right: 7%;
   margin-left: 9%;
   margin-top: 1%;
- 
+  border-radius: 35px;
+  background: #c91313;
+  box-shadow:  9px 9px 18px #8d0d0d,
+               -9px -9px 18px #ff1919;
   
  
   
@@ -123,13 +131,12 @@ ul li.checked::before {
 /* Style the close button */
 .close {
   position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
+  right: 5%;
+  top: 25%;
 }
 
 .close:hover {
-  background-color: #f443365c;
+  background-color: #f4433600;
   color: white;
 }
 
@@ -157,10 +164,10 @@ ul li.checked::before {
 
 /* Style the input */
 input {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  border-width: px;
   
-  
+
+  align-content: center;
+  text-align: center;
   border: solid rgb(255, 255, 255);
   border-radius: 10%;
   width: 75%;
@@ -169,27 +176,33 @@ input {
   font-size: 16px;
   width: 15%;
   backdrop-filter: blur(100px);
-  
+  border-radius: 23px;
+  background: #fafafa;
+  box-shadow: inset 16px 16px 32px #00000050,
+              inset -16px -16px 32px #ffffff;
 }
 
 /* Style the "Add" button */
 .addBtn {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   padding: 10px;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 5%;
   background: #fafafa00;
   color: rgb(255, 255, 255);
   float:right;
-  border-radius: 100%
+ 
+
 
   
-  border /* border-radius */
-  
+
 }
-
 .addBtn:hover {
-  background-color: rgba(61, 227, 6, 0.771);
+
+  border-radius: 100px;
+  background-color: chartreuse;
+  
+
 }
 
 
